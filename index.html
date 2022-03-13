@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fabric.js Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/tingle.min.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="designer-area">
+        <div id="side-switcher">
+          <div class="button-group"></div>
+        </div>
+
+        <div class="designer">
+          <div id="bg-color"></div>
+          <div id="canvases">
+            <!-- the canvases go here-->
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <section>
+          <h3>Colors:</h3>
+          <div id="colors"></div>
+        </section>
+        <section>
+          <h3>Upload</h3>
+          <input
+            type="file"
+            name="uploadart"
+            style="display: none;"
+            id="uploadart"
+          />
+          <label for="uploadart"
+            >&nbsp;
+            <a class="button">Upload Artwork</a>
+          </label>
+        </section>
+
+        <section>
+          <h3>Export</h3>
+          <a id="exportart" class="button outline small">Export Art</a>
+          <a id="exportmockup" class="button outline small"
+            >Export Flat Mockup</a
+          >
+          <a id="generatemockups" class="button outline small"
+            >Generate Mockups</a
+          >
+        </section>
+      </aside>
+    </div>
+
+    <script src="src/tingle.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
